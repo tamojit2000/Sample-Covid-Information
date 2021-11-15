@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="../static/my_js.js"></script>
+    <link href="../static/my_css.css" rel="stylesheet" type="text/css">
+    <title>Covid Information</title>
+  </head>
+
+
+  <body>
+
+
+    <div class="header" id="header">
+      <h2>Household Information on Covid-19 Pandemic in India.</h2>
+    </div>
+
+    <br><br><br><br><br>
+
+    <div class="section">
+      <label>
+        Enter Email for follow up:
+        <input type="email" id="Email" required name="Email">
+      </label>
+    </div>
+
+    <div class="section">
+      <label>
+        <B>1.</B>	Number of People presently in the household (please include all, including small children)
+        <input type="number" min="1" required name="Resident1" id="Resident1" value="5"/>
+      </label>
+    </div>
+
+    <div class="section">
+      <label>
+        <B>4.</B> Religion –
+        <select class="" name="Religion" id="Religion">
+          <option value="Hinduism">Hinduism</option>
+          <option value="Islam">Islam</option>
+          <option value="Christianity">Christianity</option>
+          <option value="Sikhism">Sikhism</option>
+          <option value="Buddhism">Buddhism</option>
+          <option value="Jainism">Jainism</option>
+          <option value="Others">Others</option>
+          <option value="Prefer not to answer">Prefer not to answer</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="section" id='Income'>
+        <label>
+          <B> 3. </B> Annual family income of household from all sources in rupees:
+
+          </br>
+          <input type="radio" required name="Income" value="< 5 lakhs" />
+          <label>less than 5 lakhs</label>
+
+          </br>
+          <input type="radio" required name="Income" value="5 – 10 lakhs" />
+          <label>5 – 10 lakhs</label>
+
+          </br>
+          <input type="radio" required name="Income" value="10 – 15 lakhs" />
+          <label>10 – 15 lakhs</label>
+
+          </br>
+          <input type="radio" required name="Income" value="15 – 20 lakhs" />
+          <label>15 – 20 lakhs</label>
+
+          </br>
+          <input type="radio" required name="Income" value="> 20 lakhs" />
+          <label>20 lakhs and above</label>
+
+          </br>
+          <input type="radio" required name="Income" value="Do not disclose" checked='checked' />
+          <label>Do not wish to disclose</label>
+
+        </label>
+      </div>
+
+
+      <br><br><br><br>
+
+      <center>
+        <input type="button" name="" class="question_agree_button" value="Predict" onclick="predict()" />
+      </center>
+
+      <br><br><br><br>
+
+      <div class="output_section" id="output_section">
+        <label id="output_label">
+          <b>
+            Postive
+          </b>
+        </label>
+
+      </div>
+
+
+      <br><br><br><br>
+
+      <div class="vaccine_center" >
+        <center>
+          <form class="" action="centers" method="post">
+            <label>
+              Enter Pincode for follow up:
+              <input type="number" id="vaccine_center" name="vaccine_center" required >
+            </label>
+            <input type="submit" name="" class="" value="Search" />
+
+          </form>
+        </center>
+
+
+      </div>
+
+
+      <br><br><br><br><br><br><br><br>
+
+  </body>
+</html>
