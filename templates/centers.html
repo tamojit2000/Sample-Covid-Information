@@ -7,8 +7,32 @@
     <title>Vaccine Centers</title>
   </head>
   <body>
-    Hello
-    {{ arg }}
+
+
+    <table>
+      <th>Centre Id </th>
+      <th>Block Name </th>
+      <th>Name </th>
+      <th>Address</th>
+      <th>From </th>
+      <th>To </th>
+      {% for data in arg.values() %}
+        {% for data2 in data %}
+
+          <tr>
+            <td> {{ data2['center_id'] }} </td>
+            <td> {{ data2['block_name'] }} </td>
+            <td> {{ data2['name'] }} </td>
+            <td> {{ data2['address'] }} </td>
+            <td> {{ data2['from'] }} </td>
+            <td> {{ data2['to'] }} </td>
+          </tr>
+
+
+        {% endfor %}
+
+      {% endfor %}
+    </table>
 
   </body>
 </html>

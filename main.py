@@ -27,7 +27,8 @@ def centers():
         pin_code=request.form['vaccine_center']
         available_centers = cowin.get_availability_by_pincode(pin_code)
         print(available_centers)
-        return render_template('centers.html',arg=12)
+        print(type(available_centers))
+        return render_template('centers.html',arg=available_centers)
     else:
         return redirect('/')
 

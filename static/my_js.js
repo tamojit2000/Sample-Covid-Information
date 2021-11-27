@@ -12,9 +12,11 @@ function predict() {
   if (opt_2==7) {
     document.getElementById('output_label').innerHTML='Postive';
     console.log('Postive');
+    alert('Positive');
   } else {
     document.getElementById('output_label').innerHTML='Negative';
     console.log('Negative');
+    alert('Negative')
   }
 
 }
